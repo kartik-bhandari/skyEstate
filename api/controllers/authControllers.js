@@ -5,7 +5,6 @@ import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv';
 
 dotenv.config()
-console.log(process.env.JWT_SECRET)
 
 export const signup = async(req,res,next)=>{
     const {username , email ,password} = req.body;
@@ -29,6 +28,7 @@ export const signup = async(req,res,next)=>{
 
 export const signin = async(req,res,next)=>{
     const {email, password} = req.body;
+    console.log(process.env.JWT_SECRET)
     try{
         const validUser = await User.findOne({email});
         if(!validUser){
