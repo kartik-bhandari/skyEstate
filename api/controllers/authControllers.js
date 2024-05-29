@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken'
 import dotenv from 'dotenv';
 
 dotenv.config()
+console.log(process.env.JWT_SECRET)
 
 export const signup = async(req,res,next)=>{
     const {username , email ,password} = req.body;
