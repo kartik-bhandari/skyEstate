@@ -126,6 +126,7 @@ export default function Profile() {
       setShowListingsError(false);
       const res = await fetch(`/api/user/listings/${currentUser._id}`);
       const data = await res.json();
+      console.log(data)
       if (data.success === false) {
         setShowListingsError(true);
         return;
