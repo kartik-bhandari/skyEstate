@@ -171,13 +171,13 @@ export default function Listing() {
 {/*             {contact && <Contact listing={listing} />} */}
   <div className="flex gap-5 justify-center">
         <a
-            className="mt-4 w-32 flex justify-center bg-red-700 text-sm font-bold text-white rounded-full p-3"
+            className="bg-red-700 w-full max-w-[300px] text-white text-center p-1 rounded-full"
             href="tel:+919625021125"
           >
             Call now
           </a>
         <a
-            className="mt-4 w-32 flex justify-center bg-green-700 text-sm font-bold text-white rounded-full p-3"
+            className="bg-green-700 w-full max-w-[300px] text-white text-center p-1 rounded-full"
             href="https://wa.me/9625021125"
           >
             Whatsapp
