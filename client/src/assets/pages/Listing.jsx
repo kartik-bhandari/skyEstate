@@ -125,12 +125,12 @@ export default function Listing() {
               {listing.address}
             </p>
             <div className='flex mt-2 gap-4'>
-              <p className='bg-red-900 w-full max-w-[300px] text-white text-center p-1 rounded-md'>
-                {listing.type === 'rent' ? 'For Rent' : 'For Sale'}
+              <p className='w-full max-w-[300px] text-green-900 text-center font-bold p-1 rounded-md'>
+                ({listing.type === 'rent' ? 'For Rent' : 'For Sale'})
               </p>
               {listing.offer && (
-                <p className='bg-green-900 w-full max-w-[300px] text-white text-center p-1 rounded-md'>
-                  ${+listing.regularPrice  - +listing.discountedPrice } OFF
+                <p className='w-full max-w-[300px] text-green-900 font-bold text-center p-1 rounded-md'>
+                  (${+listing.regularPrice  - +listing.discountedPrice } OFF)
                 </p>
               )}
             </div>
@@ -171,13 +171,13 @@ export default function Listing() {
 {/*             {contact && <Contact listing={listing} />} */}
   <div className="flex gap-5 justify-center">
         <a
-            className="bg-red-700 w-full max-w-[300px] text-white text-center p-1 rounded-full"
+            className="mt-4 bg-red-700 w-full max-w-[300px] text-white font-bold text-center p-1 rounded-full"
             href="tel:+919625021125"
           >
             Call now
           </a>
         <a
-            className="bg-green-700 w-full max-w-[300px] text-white text-center p-1 rounded-full"
+            className="mt-4 bg-green-700 w-full max-w-[300px] text-white font-bold text-center p-1 rounded-full"
             href="https://wa.me/9625021125"
           >
             Whatsapp
