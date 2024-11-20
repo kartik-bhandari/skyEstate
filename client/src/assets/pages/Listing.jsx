@@ -124,12 +124,12 @@ export default function Listing() {
               <FaMapMarkerAlt className='text-green-700' />
               {listing.address}
             </p>
-            <div className='flex mt-2 gap-4'>
-              <p className='w-full max-w-[300px] text-green-900 text-center font-bold p-1 rounded-md'>
+            <div className='flex mt-2'>
+              <p className='text-green-900 font-bold p-1'>
                 ({listing.type === 'rent' ? 'For Rent' : 'For Sale'})
               </p>
               {listing.offer && (
-                <p className='w-full max-w-[300px] text-green-900 font-bold text-center p-1 rounded-md'>
+                <p className='text-green-900 font-bold p-1'>
                   (${+listing.regularPrice  - +listing.discountedPrice } OFF)
                 </p>
               )}
@@ -169,15 +169,15 @@ export default function Listing() {
               </button>
             )} */}
 {/*             {contact && <Contact listing={listing} />} */}
-  <div className="flex gap-5 justify-center">
+  <div className="flex gap-5">
         <a
-            className="mt-4 bg-red-700 w-full max-w-[300px] text-white font-bold text-center p-1 rounded-full"
+            className="bg-red-700 w-full max-w-[300px] text-white font-bold text-center p-3 rounded-full"
             href="tel:+919625021125"
           >
             Call now
           </a>
         <a
-            className="mt-4 bg-green-700 w-full max-w-[300px] text-white font-bold text-center p-1 rounded-full"
+            className="bg-green-700 w-full max-w-[300px] text-white font-bold text-center p-3 rounded-full"
             href="https://wa.me/9625021125"
           >
             Whatsapp
