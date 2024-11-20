@@ -160,15 +160,29 @@ export default function Listing() {
                 {listing.furnished ? 'Furnished' : 'Unfurnished'}
               </li>
             </ul>
-            {currentUser && listing.userRef !== currentUser._id && !contact && (
+{/*             {currentUser && listing.userRef !== currentUser._id && !contact && (
               <button
                 onClick={() => setContact(true)}
                 className='bg-slate-700 text-white rounded-lg uppercase hover:opacity-95 p-3'
               >
                 Contact landlord
               </button>
-            )}
-            {contact && <Contact listing={listing} />}
+            )} */}
+{/*             {contact && <Contact listing={listing} />} */}
+  <div className="flex gap-5 justify-center">
+        <a
+            className="mt-4 w-32 flex justify-center bg-red-700 text-sm font-bold text-white rounded-full p-3"
+            href="tel:+919625021125"
+          >
+            Call now
+          </a>
+        <a
+            className="mt-4 w-32 flex justify-center bg-green-700 text-sm font-bold text-white rounded-full p-3"
+            href="https://wa.me/9625021125"
+          >
+            Whatsapp
+          </a>
+          </div>
           </div>
         </div>
       )}
